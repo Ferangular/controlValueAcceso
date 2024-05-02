@@ -1,0 +1,13 @@
+@for(ratingId of ratingArr; track ratingId; let idx = $index){
+  <button
+    type="button"
+
+    [id]="'star_' + idx"
+    (click)="onClick(idx + 1)"
+    matTooltipPosition="above"
+  >
+    <span class="material-icons"> {{ showIcon(idx) }} </span>
+  </button>
+}
+
+

@@ -1,0 +1,11 @@
+<form class="container" [formGroup]="formGroup">
+  <label>Nombre</label>
+  <div class="container__elements">
+    <input class="field" formControlName="name" />
+    @if(formGroup.controls.name.hasError('required')){
+      <span class="error" >Igrese el nombre del autor</span>
+    }
+
+    <app-star-rating formControlName="rating"></app-star-rating>
+  </div>
+</form>

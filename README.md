@@ -1,4 +1,27 @@
-# ControlValueAcceso
+
+# ControlValueAccessor
+
+Este proyecto de Angular hace uso del `ControlValueAccessor`, una interfaz proporcionada por Angular para crear una conexión entre los componentes de formulario y los datos del modelo.
+
+## ¿Qué es ControlValueAccessor?
+
+El `ControlValueAccessor` es una interfaz que permite a los componentes de formulario Angular interactuar con el `FormControl` de Angular, lo que facilita la creación de componentes personalizados que se integran sin problemas con el sistema de formularios de Angular.
+
+## ¿Por qué usar ControlValueAccessor?
+
+Utilizar `ControlValueAccessor` es útil cuando necesitas crear un componente personalizado que actúe como un control de formulario en Angular. Al implementar esta interfaz en tu componente, puedes garantizar que se comunique adecuadamente con el modelo de datos subyacente y se integre correctamente con las validaciones de formularios y otros aspectos del sistema de formularios de Angular.
+
+## ¿Cómo funciona?
+
+El `ControlValueAccessor` define métodos para leer y escribir valores entre el modelo de datos y el control de formulario. Estos métodos incluyen `writeValue`, `registerOnChange`, `registerOnTouched` y `setDisabledState`. Al implementar esta interfaz en un componente personalizado, puedes controlar cómo se manejan los valores del formulario y cómo interactúa tu componente con el sistema de formularios de Angular.
+
+Para obtener más información sobre cómo usar `ControlValueAccessor`, consulta la [documentación oficial de Angular](https://angular.io/api/forms/ControlValueAccessor).
+
+## Contribución
+
+Si deseas contribuir a este proyecto o mejorar la implementación del `ControlValueAccessor`, ¡siéntete libre de abrir un Pull Request!
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
